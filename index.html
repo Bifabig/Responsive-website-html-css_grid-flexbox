@@ -36,16 +36,28 @@
         <div class="showcase-text">
           <h1>Easy Deployment</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Cupiditate, modi et aut cum voluptatibus eum voluptas aperiam
-            voluptate sapiente totam!
+            Deploy web apps of all kinds, from large scale enterprise APIs to
+            static websites for individuals. Fill out the form to try a demo of
+            our platform
           </p>
           <a href="features.html" class="btn btn-outline">Read More...</a>
         </div>
 
         <div class="showcase-form card">
           <h2>Request a demo</h2>
-          <form>
+          <form
+            name="contact"
+            netlify-honeypot="bot-field"
+            method="POST"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+
+            <p class="hidden">
+              <label
+                >Don’t fill this out if you're human: <input name="bot-field"
+              /></label>
+            </p>
             <div class="form-control">
               <input type="text" name="name" placeholder="Name" required />
             </div>
@@ -70,8 +82,8 @@
     <section class="stats">
       <div class="container">
         <h3 class="stats-heading text-center my-1">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet,
-          sint.
+          Welcome to the best platform for building applications of all types
+          with modern architecture and scaling
         </h3>
 
         <div class="grid grid-3 text-center my-4">
